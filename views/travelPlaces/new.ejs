@@ -6,8 +6,21 @@
   <div class="form">
     <form action="/travelplaces" method="POST" class="createNew-form">
       <h1 class="mb-4">New Travel Place</h1>
-      <input type="text" name="name" id="name" placeholder="name" />
-      <input type="text" name="image" id="image" placeholder="image url" />
+      <input
+        type="text"
+        name="name"
+        id="name"
+        placeholder="name"
+        maxlength="50"
+        required
+      />
+      <input
+        type="text"
+        name="image"
+        id="image"
+        placeholder="image url"
+        required
+      />
 
       <textarea
         class="description"

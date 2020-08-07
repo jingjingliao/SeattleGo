@@ -15,7 +15,7 @@ passport = require("passport");
   (passportLocalMongoose = require("passport-local-mongoose"));
 methodOverride = require("method-override");
 
-// const port = process.env.PORT || "mongodb://localhost:27017/seattle_go";
+
 const uri = process.env.DATABASEURL || "mongodb://localhost:27017/seattle_go";
 mongoose
   .connect(uri, {
