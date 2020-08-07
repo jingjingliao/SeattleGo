@@ -1,0 +1,42 @@
+
+<%- include("../partials/header") %>
+ <!-- regular CSS -->
+ <link rel="stylesheet" href="/stylesheets/index.css" />
+
+    <div id="header" class="jumbotron">
+      <div class="container text-center">
+        <h1 class="display-3 welcome">Welcome to Seattle!</h1>
+        <p class="subtitle">
+          View all of the beautiful, and amazing places in Seattle!
+        </p>
+        <a
+          class="btn btn-outline-primary btn-lg"
+          href="/travelplaces/new"
+          role="button"
+          >Add New Places</a
+        >
+      </div>
+    </div>
+
+    <div class="row text-center" id="travelplaces-grid">
+      <% travelplaces.forEach(function(place) { %>
+       
+      <div class="col-lg-4 col-md-4 col-sm-6 mb-4">
+        <div class="card">
+          <img src="<%= place.image %>" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h3 class="card-title"><%= place.name %>  </h3>
+            <p class="card-text">
+              <%= place.description.substring(0, 80) %> ... 
+          </p>
+          
+            <a href="/travelplaces/<%= place._id %>" class="btn btn-outline-primary"
+              >More Info </a
+            >            
+          </div>
+        </div>
+      </div>
+      <% }) %>
+    </div>
+  </body>
+</html>

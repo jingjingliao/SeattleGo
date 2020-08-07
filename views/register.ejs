@@ -1,0 +1,32 @@
+<%- include("./partials/header") %>
+<!-- regular CSS -->
+<link rel="stylesheet" href="/stylesheets/register.css" />
+
+<div class="createNew-page">
+  <div class="form">
+    <form action="/register" method="POST" class="createNew-form">
+      <h1 class="mb-2">Sign Up</h1>
+      <input type="text" name="username" id="username" placeholder="username" />
+      <input
+        type="password"
+        name="password"
+        id="password"
+        placeholder="password"
+      />
+      <input
+        type="text"
+        name="imageUrl"
+        id="imageUrl"
+        placeholder="imageUrl optional"
+      />
+
+      <button>Submit</button>
+      <p class="message">Already registered? <a href="/login">Sign In</a></p>
+    </form>
+    
+  </div>
+</div>
+      
+    </form>
+  </div>
+</div>

@@ -1,0 +1,29 @@
+<%- include("../partials/header") %>
+<!-- regular CSS -->
+<link rel="stylesheet" href="/stylesheets/new.css" />
+
+<div class="createNew-page">
+  <div class="form">
+    <form
+      action="/travelplaces/<%= foundPlace._id %>/comments"
+      method="POST"
+      class="createNew-form"
+    >
+      <h1 class="mb-4">Add new Comments to <%= foundPlace.name %></h1>
+
+      <textarea
+        class="description"
+        name="comment[text]"
+        placeholder="comment content"
+        style="width: 100%;"
+        rows="4"
+      ></textarea>
+
+      <button>Submit</button>
+
+      <p class="message">
+        <a href="/travelplaces/<%= foundPlace._id %>">Go Back</a>
+      </p>
+    </form>
+  </div>
+</div>

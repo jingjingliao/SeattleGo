@@ -1,0 +1,11 @@
+.card {
+  margin: 80px auto;
+}
+
+#delete {
+  display: inline;
+}
+
+img {
+  border-radius: 25px;
+}

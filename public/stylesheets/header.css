@@ -1,0 +1,23 @@
+.navbar {
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  font-size: large;
+  background: rgba(0, 0, 0, 0.6) !important;
+  height: 3.5em;
+}
+
+.navbar-brand {
+  padding-left: 1.5rem;
+}
+
+.navbar-nav li {
+  padding-right: 1.5rem;
+}
+
+.navbar-dark .navbar-brand:hover {
+  color: #dee7e9;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: azure;
+}
